@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="content" content="path_ur">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/659604d02a.js"></script>
+    <link rel="stylesheet" href="css/960_12_col.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <title>Porto Fathur!</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <nav class="color"></nav>
+    <div class="box_spacing"></div>
+    <div class="container_12 box_s profile">
+        <img src="img/photo.jpg" alt="">
+        <div class="p_text">
+            <p>check the checkbox!</p>
+            <p>No checkbox mean it's must fill!</p>
+            <h2><input type="text" name="name" placeholder="Your Name" required></h2>
+            <h3><input type="text" name="special" placeholder="Your Specialist" required></h3>
+            <div class="p_desc">
+                <p><i class="fas fa-envelope"></i> <input type="text" name="email" placeholder="Your Email"><input
+                        type="checkbox" name="profile1" value="1"> Checkbox</p>
+                <p><i class="fas fa-globe"></i> <input type="text" name="site" placeholder="Your Site"><input
+                        type="checkbox" name="profile2" value="1"> Checkbox</p>
+                <p><i class="fab fa-github-square"></i> <input type="text" name="github_p"
+                        placeholder="Your Github Page"><input type="checkbox" name="profile3" value="1">
+                    Checkbox
+                </p>
+                <p><i class="fas fa-phone"></i> <input type="text" name="phone" placeholder="Your Phone Number"><input
+                        type="checkbox" name="profile4" value="1">
+                    Checkbox
+                </p>
+                <p><i class="fas fa-map-marker-alt"></i> <input type="text" name="address"
+                        placeholder="Your Address"><input type="checkbox" name="profile5" value="1"> Checkbox
+                </p>
+                <div class="center">
+                    <input type="radio" name="sosmed" value="yes" onclick="yes1();"> Yes
+                    <input type="radio" name="sosmed" value="no" onclick="no1();" checked> No
+                </div><br>
+                <div class="attribute" id="attribute1" style="margin-left: 20%;">
+                    <i class="fab fa-facebook"></i> <input type="text" name="fb" placeholder="Enter facebook ID"><input
+                        type="checkbox" name="sosmed1" value="1">
+                    Checkbox
+                    <br>
+                    <i class="fab fa-instagram"></i> <input type="text" name="ig"
+                        placeholder="Enter instagram ID"><input type="checkbox" name="sosmed2" value="1">
+                    Checkbox
+                    <br>
+                    <i class="fab fa-line"></i> <input type="text" name="line" placeholder="Enter Line ID"><input
+                        type="checkbox" name="sosmed3" value="1">
+                    Checkbox<br>
+                    <i class="fab fa-linkedin"></i> <input type="text" name="linkedin"
+                        placeholder="Enter LinkedIn ID"><input type="checkbox" name="sosmed4" value="1">
+                    Checkbox
+                    <br>
+                    <i class="fab fa-github"></i> <input type="text" name="github" placeholder="Enter Github ID"><input
+                        type="checkbox" name="sosmed5" value="1"> Checkbox
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container_12 box_w">
+        <div class="grid_12 title" id="about">
+            <h2>Do you want to adding description about your self?</h2>
+            <hr>
+            <div class="center">
+                <input type="radio" name="about" value="yes" onclick="yes2();"> Yes
+                <input type="radio" name="about" value="no" onclick="no2();" checked> no
+            </div><br>
+            <div class="attribute center" id="attribute2">
+                <textarea name="about_desc" id="" cols="100" rows="10"
+                    placeholder='add your description text here'></textarea>
+            </div>
+            <p class="center">do not fill the box if you choose "no"!</p>
+        </div>
+    </div>
+    <div class="container_12 box_s">
+        <div class="grid_12 title" id="experience">
+            <h2>Do you want to adding your Experience?</h2>
+            <hr>
+            <div class="center">
+                <input type="radio" name="experience" value="yes" onclick="yes3();"> Yes
+                <input type="radio" name="experience" value="no" onclick="no3();" checked> No
+            </div>
+            <div class="attribute center" id="exp_p">
+                <h3>How much box experience do you need?</h3>
+                <input type="radio" name="box_exp" value="1" onclick="box_exp1();"> One
+                <input type="radio" name="box_exp" value="2" onclick="box_exp2();"> Two
+                <input type="radio" name="box_exp" value="3" onclick="box_exp3();"> Three
+                <br>
+            </div>
+            <div class="center" id="exp" style="padding-left: 100px;">
+                <div class="grid_3 attribute" id="box_text1">
+                    <textarea name="box_text1" id="" cols="30" rows="1" placeholder="Title1"></textarea>
+                    <textarea name="box_text11" id="" cols="30" rows="10" placeholder="Description 1"></textarea>
+                </div>
+                <div class="grid_3 attribute" id="box_text2">
+                    <textarea name="box_text2" id="" cols="30" rows="1" placeholder="Title2"></textarea>
+                    <textarea name="box_text12" id="" cols="30" rows="10" placeholder="Description 2"></textarea>
+                </div>
+                <div class="grid_3 attribute" id="box_text3">
+                    <textarea name="box_text3" id="" cols="30" rows="1" placeholder="Title3"></textarea>
+                    <textarea name="box_text13" id="" cols="30" rows="10" placeholder="Description 3"></textarea>
+                </div><br>
+            </div>
+        </div>
+        <p class="center">do not fill the box if you choose "no"!</p>
+    </div>
+    <div class="container_12 box_w">
+        <div class="grid_12 title" id="skill">
+            <h2>Do you want to adding your Skills?</h2>
+            <hr>
+            <div class="center">
+                <input type="radio" name="skill" value="yes" onclick="yes4();"> Yes
+                <input type="radio" name="skill" value="no" onclick="no4();" checked> No
+            </div>
+            <div class="attribute center" id="skill_p">
+                <div class="center">
+                    <h3>How much box experience do you need?</h3>
+                    <input type="radio" name="box_skill" value="1" onclick="box_skill1();"> One
+                    <input type="radio" name="box_skill" value="2" onclick="box_skill2();"> Two
+                    <input type="radio" name="box_skill" value="3" onclick="box_skill3();"> Three
+                </div><br>
+                <div class="grid_3 box_s box_skill center attribute" id="text_skill1">
+                    <br>
+                    <input type="text" name="title_skill1" placeholder="Name"><br><br><br>
+                    <input type="text" name="name_skill11" placeholder="title" style="width: 150px">
+                    <input type="text" name="percentage_skill11" placeholder="%" style="width: 30px"><input
+                        type="checkbox" name="skill11" value="1"><br><br>
+                    <input type="text" name="name_skill12" placeholder="title" style="width: 150px">
+                    <input type="text" name="percentage_skill12" placeholder="%" style="width: 30px"><input
+                        type="checkbox" name="skill12" value="1"><br><br>
+                    <input type="text" name="name_skill13" placeholder="title" style="width: 150px">
+                    <input type="text" name="percentage_skill13" placeholder="%" style="width: 30px"><input
+                        type="checkbox" name="skill13" value="1"><br><br>
+                    <input type="text" name="name_skill14" placeholder="title" style="width: 150px">
+                    <input type="text" name="percentage_skill14" placeholder="%" style="width: 30px"><input
+                        type="checkbox" name="skill14" value="1"><br><br>
+                    <br>
+                </div>
+                <div class="grid_3 box_s box_skill center attribute" id="text_skill2">
+                    <br>
+                    <input type="text" name="title_skill2" placeholder="Name"><br><br><br>
+                    <input type="text" name="name_skill21" placeholder="title" style="width: 150px">
+                    <input type="text" name="percentage_skill21" placeholder="%" style="width: 30px"><input
+                        type="checkbox" name="skill21" value="1"><br><br>
+                    <input type="text" name="name_skill22" placeholder="title" style="width: 150px">
+                    <input type="text" name="percentage_skill22" placeholder="%" style="width: 30px"><input
+                        type="checkbox" name="skill22" value="1"><br><br>
+                    <input type="text" name="name_skill23" placeholder="title" style="width: 150px">
+                    <input type="text" name="percentage_skill23" placeholder="%" style="width: 30px"><input
+                        type="checkbox" name="skill23" value="1"><br><br>
+                    <input type="text" name="name_skill24" placeholder="title" style="width: 150px">
+                    <input type="text" name="percentage_skill24" placeholder="%" style="width: 30px"><input
+                        type="checkbox" name="skill24" value="1"><br><br>
+                    <br>
+                </div>
+                <div class="grid_3 box_s box_skill center attribute" id="text_skill3">
+                    <br>
+                    <input type="text" name="title_skill3" placeholder="Name"><br><br><br>
+                    <input type="text" name="name_skill31" placeholder="title" style="width: 150px">
+                    <input type="text" name="percentage_skill31" placeholder="%" style="width: 30px"><input
+                        type="checkbox" name="skill31" value="1"><br><br>
+                    <input type="text" name="name_skill32" placeholder="title" style="width: 150px">
+                    <input type="text" name="percentage_skill32" placeholder="%" style="width: 30px"><input
+                        type="checkbox" name="skill32" value="1"><br><br>
+                    <input type="text" name="name_skill33" placeholder="title" style="width: 150px">
+                    <input type="text" name="percentage_skill33" placeholder="%" style="width: 30px"><input
+                        type="checkbox" name="skill33" value="1"><br><br>
+                    <input type="text" name="name_skill34" placeholder="title" style="width: 150px">
+                    <input type="text" name="percentage_skill34" placeholder="%" style="width: 30px"><input
+                        type="checkbox" name="skill34" value="1"><br><br>
+                </div>
+            </div>
+        </div>
+        <div class="grid_12">
+            <p class="center">do not fill the box if you choose "no"!</p>
+        </div>
+    </div>
+    <div class="container_12 box_s">
+        <div class="center">
+            <a href="oops.html"><button type="button">Submit</button></a>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; Copyright 2019 | Made With <i class="fas fa-heart"></i> by Moh. Fathur Rohman</a>
+        </p>
+    </footer>
+</body>
+
+</html>
