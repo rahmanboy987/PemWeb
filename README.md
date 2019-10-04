@@ -16,3 +16,6 @@ aturan penggunaan
 1. Untuk tugas1 - tugas2 dapat dibuka langsung dengan membuka file index.html didalam directory tersebut
 2. Untuk tugas3 - tugas6 hanya dapat dibuka dengan menghidupkan "apasche" dan "mysql" didalam xampp, kemudian meletakkan folder yang akan dibuka kedalam folder C:\xampp\htdocs\(windows) atau di /opt/lampp/htdocs/(linux)
 3. Sebelum membuka tugas5 - tugas6 diharuskan untuk meng-import database yang tersedia disetiap directory kedalam phpmyadmin anda, serta mengatur username, directory dan password didalam file config.php
+
+
+NB : Untuk melihat langsung bisa dengan website diatas tanpa repot bisa mengunjungi github page berikut https://rahmanboy987.github.io/ kemudian scroll kebawah dan klik masing-masing link yang tersedia.
